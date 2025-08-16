@@ -5,94 +5,241 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Varun Gautam - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1>Varun Gautam</h1>
-    <p>Business Analyst | Data Analyst | Problem Solver</p>
-    <div class="contact-links">
-      <a href="mailto:gautamvarun211@gmail.com">Email</a> | 
-      <a href="https://www.linkedin.com/in/varungautam0211/" target="_blank">LinkedIn</a> | 
-      <a href="tel:+919888922433">Call</a>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/300x300/2c3e50/ffffff?text=VG" alt="Varun Gautam" id="profile-pic">
+        </div>
+        <h1 class="hero-name">Varun Gautam</h1>
+        <p class="hero-designation">Business Analyst | Data Analyst | Problem Solver</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="downloadResume()">
+            <i class="fas fa-download"></i> Resume
+          </button>
+          <button class="btn btn-secondary" onclick="scrollToPortfolio()">
+            <i class="fas fa-eye"></i> View Portfolio
+          </button>
+        </div>
+      </div>
     </div>
-  </header>
-
-  <!-- About -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Business Analyst with 3+ years of experience driving strategic, cross-functional initiatives across global businesses. 
-      Skilled in delivering insights through data analysis, stakeholder collaboration, and process optimization. 
-      Experienced in working with cross-functional teams, analyzing customer behavior, and delivering high-impact solutions for business growth.
-    </p>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
   </section>
 
-  <!-- Skills -->
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> SQL, Python, BigQuery, PySpark, Hadoop, Git, Bash</li>
-      <li><strong>Visualization:</strong> Domo, Tableau</li>
-      <li><strong>Others:</strong> MS-Excel, Google Analytics, Airflow, JIRA, GitHub, Statistics, Confluence</li>
-      <li><strong>Soft Skills:</strong> Stakeholder Management, Communication, Problem-solving, Documentation</li>
-    </ul>
-  </section>
+  <!-- Portfolio Content -->
+  <div id="portfolio-content" class="portfolio-content">
+    <!-- About -->
+    <section class="content-section">
+      <h2>About Me</h2>
+      <p>
+        Business Analyst with 3+ years of experience driving strategic, cross-functional initiatives across global businesses. 
+        Skilled in delivering insights through data analysis, stakeholder collaboration, and process optimization. 
+        Experienced in working with cross-functional teams, analyzing customer behavior, and delivering high-impact solutions for business growth.
+      </p>
+    </section>
 
-  <!-- Experience -->
-  <section>
-    <h2>Work Experience</h2>
+    <!-- Skills -->
+    <section class="content-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Programming</h3>
+          <p>SQL, Python, BigQuery, PySpark, Hadoop, Git, Bash</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+          <p>Domo, Tableau</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <p>MS-Excel, Google Analytics, Airflow, JIRA, GitHub, Statistics, Confluence</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <p>Stakeholder Management, Communication, Problem-solving, Documentation</p>
+        </div>
+      </div>
+    </section>
 
-    <h3>Business Analyst I – Rakuten India (May 2022 – Present)</h3>
-    <ul>
-      <li>Acted as internal analytics consultant across Rakuten’s 70+ services, delivering customer insights and growth opportunities.</li>
-      <li>Led Cross-Use Analysis integrating 45+ services, boosting cross-service usage and identifying spending lift patterns.</li>
-      <li>Increased customer onboarding from Rakuten Ichiba to Travel, leading to an additional ¥150M monthly spend.</li>
-      <li>Built dashboards in Domo for 45+ services, tracking cross-user metrics and performance KPIs.</li>
-      <li>Developed a Generative AI web app using OpenAI, automating weekly data insight extraction (saving 8 hrs/week).</li>
-      <li>Reduced ¥200M yearly opportunity loss by identifying & fixing deadlinks on Rakuten Ichiba’s website.</li>
-      <li>Partner store analysis for offline sales in Japan, improving campaign planning efficiency.</li>
-      <li>Built customer segmentation pipelines for personalized marketing campaigns.</li>
-      <li>Promoted from Associate Business Analyst (May 2022 – June 2024).</li>
-    </ul>
+    <!-- Experience -->
+    <section class="content-section">
+      <h2>Work Experience</h2>
 
-    <h3>Internships</h3>
-    <p><strong>Rakuten India (Jan 2022 – May 2022)</strong> – Technical Intern (Data Science & Analytics)</p>
-    <ul>
-      <li>Built BI tools analyzing customer behavior for 30+ external clients in retail & food industries.</li>
-      <li>Received Pre-Placement Offer for high performance.</li>
-    </ul>
-    
-    <p><strong>Foxmula (May 2021 – Jul 2021)</strong> – SDE Intern</p>
-    <ul>
-      <li>Developed a mock e-commerce app with PayPal payment integration.</li>
-    </ul>
-  </section>
+      <div class="experience-item">
+        <h3>Business Analyst I – Rakuten India</h3>
+        <p class="experience-period">May 2022 – Present</p>
+        <ul>
+          <li>Acted as internal analytics consultant across Rakuten's 70+ services, delivering customer insights and growth opportunities.</li>
+          <li>Led Cross-Use Analysis integrating 45+ services, boosting cross-service usage and identifying spending lift patterns.</li>
+          <li>Increased customer onboarding from Rakuten Ichiba to Travel, leading to an additional ¥150M monthly spend.</li>
+          <li>Built dashboards in Domo for 45+ services, tracking cross-user metrics and performance KPIs.</li>
+          <li>Developed a Generative AI web app using OpenAI, automating weekly data insight extraction (saving 8 hrs/week).</li>
+          <li>Reduced ¥200M yearly opportunity loss by identifying & fixing deadlinks on Rakuten Ichiba's website.</li>
+          <li>Partner store analysis for offline sales in Japan, improving campaign planning efficiency.</li>
+          <li>Built customer segmentation pipelines for personalized marketing campaigns.</li>
+          <li>Promoted from Associate Business Analyst (May 2022 – June 2024).</li>
+        </ul>
+      </div>
 
-  <!-- Education -->
-  <section>
-    <h2>Education</h2>
-    <p>
-      <strong>B.Tech. Computer Science (Big Data Specialization)</strong> – UPES, Dehradun (2018 – 2022)<br>
-      CGPA: 7.9/10
-    </p>
-  </section>
+      <div class="experience-item">
+        <h3>Internships</h3>
+        <div class="internship">
+          <p><strong>Rakuten India (Jan 2022 – May 2022)</strong> – Technical Intern (Data Science & Analytics)</p>
+          <ul>
+            <li>Built BI tools analyzing customer behavior for 30+ external clients in retail & food industries.</li>
+            <li>Received Pre-Placement Offer for high performance.</li>
+          </ul>
+        </div>
+        
+        <div class="internship">
+          <p><strong>Foxmula (May 2021 – Jul 2021)</strong> – SDE Intern</p>
+          <ul>
+            <li>Developed a mock e-commerce app with PayPal payment integration.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <!-- Achievements -->
-  <section>
-    <h2>Achievements</h2>
-    <ul>
-      <li>Winner of internal AI Hackathon with “Rakuten Point Optimizer” idea.</li>
-      <li>Published research paper on cognitive frailty and interventions.</li>
-      <li>Recognized for bridging business needs with technical execution across multiple projects.</li>
-    </ul>
-  </section>
+    <!-- Education -->
+    <section class="content-section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>B.Tech. Computer Science (Big Data Specialization)</h3>
+        <p class="institution">UPES, Dehradun (2018 – 2022)</p>
+        <p class="gpa">CGPA: 7.9/10</p>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="content-section">
+      <h2>Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-item">
+          <i class="fas fa-trophy"></i>
+          <p>Winner of internal AI Hackathon with "Rakuten Point Optimizer" idea.</p>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-file-alt"></i>
+          <p>Published research paper on cognitive frailty and interventions.</p>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-star"></i>
+          <p>Recognized for bridging business needs with technical execution across multiple projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="content-section">
+      <h2>Get In Touch</h2>
+      <div class="contact-grid">
+        <a href="mailto:gautamvarun211@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>gautamvarun211@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/varungautam0211/" target="_blank" class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="tel:+919888922433" class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 9888922433</span>
+        </a>
+      </div>
+    </section>
+  </div>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Varun Gautam | Built with ❤️</p>
   </footer>
 
+  <script>
+    function downloadResume() {
+      // Create a simple resume content (you can replace this with an actual PDF file)
+      const resumeContent = `
+Varun Gautam
+Business Analyst | Data Analyst | Problem Solver
+
+CONTACT
+Email: gautamvarun211@gmail.com
+LinkedIn: https://www.linkedin.com/in/varungautam0211/
+Phone: +91 9888922433
+
+PROFESSIONAL SUMMARY
+Business Analyst with 3+ years of experience driving strategic, cross-functional initiatives across global businesses. Skilled in delivering insights through data analysis, stakeholder collaboration, and process optimization.
+
+WORK EXPERIENCE
+Business Analyst I – Rakuten India (May 2022 – Present)
+• Acted as internal analytics consultant across Rakuten's 70+ services
+• Led Cross-Use Analysis integrating 45+ services
+• Increased customer onboarding leading to ¥150M monthly spend
+• Built dashboards in Domo for 45+ services
+• Developed Generative AI web app saving 8 hrs/week
+• Reduced ¥200M yearly opportunity loss
+
+SKILLS
+Programming: SQL, Python, BigQuery, PySpark, Hadoop, Git, Bash
+Visualization: Domo, Tableau
+Tools: MS-Excel, Google Analytics, Airflow, JIRA, GitHub, Statistics, Confluence
+Soft Skills: Stakeholder Management, Communication, Problem-solving, Documentation
+
+EDUCATION
+B.Tech. Computer Science (Big Data Specialization) – UPES, Dehradun (2018 – 2022)
+CGPA: 7.9/10
+
+ACHIEVEMENTS
+• Winner of internal AI Hackathon
+• Published research paper on cognitive frailty
+• Recognized for bridging business needs with technical execution
+      `;
+      
+      const blob = new Blob([resumeContent], { type: 'text/plain' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Varun_Gautam_Resume.txt';
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    }
+
+    function scrollToPortfolio() {
+      document.getElementById('portfolio-content').scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    // Smooth scrolling for all internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add scroll animation for hero section
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const hero = document.getElementById('hero');
+      if (hero) {
+        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+    });
+  </script>
 </body>
 </html>
